@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background: url("/images/austin-distel-mpN7xjKQ_Ns-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+
+.message {
+  background-color: rgba(255, 255, 255, 0.8);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message h6 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 5rem;
+}
+
+
+.btn {
+    margin-top: 10px;
+    background: #3498db;
+    background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+    background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+    background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+    background-image: -o-linear-gradient(top, #3498db, #2980b9);
+    background-image: linear-gradient(to bottom, #3498db, #2980b9);
+    -webkit-border-radius: 14;
+    -moz-border-radius: 14;
+    border-radius: 14px;
+    text-shadow: 1px 1px 3px #eeeaea;
+    font-family: Courier New;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+}
+
+  .btn:hover {
+  background: #3cb0fd;
+  text-decoration: none;
+}
+
+@media (max-width: 414px) {
+  .hero {
+    height: 295px;
+  }
+
+  .message {
+    background-color: #2980b9;
+    top: calc(50% - 50px);
+  }
+
+  .message h6{
+    height: 100px;
+    font-size: 1rem;
+    
+    
+  }
+
+
+  .hero , .btn {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+    .hero {
+    background-position: top;
+    background-size: contain;
+}
+
+  .message {
+    height: 150px;
+    top: calc(80% - 50px); 
+  }
+
+  .message h6 {
+  font-size: 3rem;
+}
+
+.hero , .btn {
+  font-size: 15px;
+}
+
+
+}
+
+
+
+
+
+@media (max-width: 300px) {
+  .hero {
+    background-size: cover;
+    height: 212px;
+  }
+
+  .message {
+    height: 70px;
+    top: calc(90% - 50px);
+    }
+
+
+}
+
+
+
